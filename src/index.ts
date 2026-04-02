@@ -1,6 +1,6 @@
-import { Ticket } from "./Ticket.js";
-import { TicketStatus } from "./TicketStatus.js";
-import { TicketService } from "./TicketService.js";
+/*import { Ticket } from "./obs/Ticket.js";
+import { TicketStatus } from "./obs/TicketStatus.js";
+import { TicketService } from "./obs/TicketService.js";
 
 const ticket = new Ticket(
   "TCK-1042",
@@ -10,4 +10,13 @@ const ticket = new Ticket(
 );
 
 const ticketService = new TicketService();
-ticketService.resolveTicket(ticket);
+ticketService.resolveTicket(ticket);*/
+
+import { ReportService } from "./ReportService.js";
+
+
+let reportService: ReportService = new ReportService();
+
+let result: String = reportService.exportReport("Ventas del mes: 12000€", true,true,false,true);
+
+console.log(result);
