@@ -1,8 +1,8 @@
 import { ReportExporter } from "./ReportExporter.js";
 
-class BasicReportExporter implements ReportExporter {
+export class BasicReportExporter implements ReportExporter {
 
-    exportReport(content:String) {
+    exportReport(content:String):String {
         return content;
     }
 }
