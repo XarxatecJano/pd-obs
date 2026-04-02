@@ -25,11 +25,11 @@ export class ReportService {
         return result;
     }
 
-   addCorporateHeader(content:String):String {
+   private addCorporateHeader(content:String):String {
         return "[CABECERA_EMPRESA]\n" + content;
     }
 
-    encrypt(content:String):String {
+    private encrypt(content:String):String {
         return "ENCRYPTED(" + content + ")";
     }
 
